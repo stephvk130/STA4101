@@ -70,7 +70,7 @@ In this example of a computational workflow, we start on the left with a generat
 - Finally, researchers can now loop back to theory and iteratively update the generative model based on comparisons between computed effects, model predictions, and posterior simulations. Insights about inferential limits and potentials can inform future research design and data collection and, following many iterations of this process, improve our understanding of the processes generating the observed cultural dynamics.
 :::
 
-## Stages
+## Stages [@Alexander2023]
 
 1. Plan and sketch an endpoint.
 2. Simulate and consider that simulated data.
@@ -89,6 +89,18 @@ In this example of a computational workflow, we start on the left with a generat
 - By the time we get to this step in the workflow, to a large extent, the model will reflect the decisions that were made in earlier stages, especially acquisition and cleaning, as much as it reflects any type of underlying data generating process. Sophisticated modelers know that their statistical models are like the bit of the iceberg above the surface: they build on, and are only possible due to, the majority that is underneath, in this case, the data. But when an expert at the whole data science workflow uses modeling, they recognize that the results that are obtained are additionally due to choices about whose data matters, decisions about how to measure and record the data, and other aspects that reflect the world as it is, well before the data are available to their specific workflow.
 - Finally, we must share what we did and what we found, at as high a fidelity as is possible. Talking about knowledge that only you have does not make you knowledgeable, and that includes knowledge that only “past you” has. When communicating, we need to be clear about the decisions that we made, why we made them, our findings, and the weaknesses of our approach. We are aiming to uncover something important so we should write down everything in the first instance, although this written communication may be supplemented with other forms of communication later. There are so many decisions that we need to make in this workflow that we want to be sure that we are open about the entire thing—start to finish. This means much more than just the statistical modeling and creation of the graphs and tables, but everything. Without this, stories based on data lack credibility.
 :::
+
+## Stages [@Harrell2025]
+
+- Report formatting
+- Data import
+- Data overview
+- Data processing
+- Descriptive statistics (univariate or simple stratification)
+- Analysis (stay close to data)
+- Caching (parallel computing, simulation)
+
+*Discussion: What is missing here?*
 
 # Version control
 
