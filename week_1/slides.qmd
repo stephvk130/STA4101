@@ -1,0 +1,62 @@
+---
+title: "Workflow"
+author: "Rohan Alexander"
+date: "2025-09-08"
+bibliography: references.bib
+format:
+  revealjs:
+    slide-number: "c/t"
+    show-slide-number: print
+---
+
+## What is statistical workflow?
+
+- Definition: The steps that we go through when trying to use data to learn about the world.
+- Aim: Want a process that is robust and rigourous end-to-end, not just in the statistical analysis part. This will enable transparent, efficient, trustworthy research.
+
+## Why is it important that we think seriously about workflows?
+
+- Our conclusions will only be as strong as the weakest part of our workflow.
+    - Errors in linking our analysis with the question we are asking will mean our analysis does not answer the question.
+    - Not thinking about data before we collect it could mean wasted time and money.
+    - Mistakenly ignoring or including variables in our analysis could mean incorrect conclusions.
+
+## Example: Cultural evolution
+
+@Deffner2024 outline a computational workflow for bridging theory and data in cultural evolution research. 
+
+![Figure 1 from @Deffner2024 illustrating a computational workflow for cultural evolution.](deffner_workflow.png)
+
+::: {.notes}
+In this example of a computational workflow, we start on the left with a generative model.
+
+- A generative model represents causal assumptions about the (latent) processes generating the observed data.
+- Generative models are concrete instantiations of theory, varying in their explanatory detail. And they provide synthetic data that can be used to validate later statistical and computational choices.
+- DAGs can be considered the simplest form of generative models. They are static representations of dynamic systems at equilibrium and abstractly describe how variables change as a function of other variables. This lack of specificity can be a strength, because the implications we deduce from DAGs consequently do not depend on detailed assumptions, and communication of important structural assumptions is easy with details omitted.
+- No one-size-fits-all solution exists and the appropriate detail of a generative model depends on the explanatory goal and the state of our theoretical understanding. Studying the same phenomena at different levels of abstraction provides its own benefits.
+- Moving to the second element: the estimand. Many papers connect theory and data by means of story-telling; story-telling does not formally define a target of inference (i.e., an estimand) and bases its conclusions on statistical estimators that are only metaphorically related to theoretical constructs. The starting point for any empirical analysis that aims to logically connect theory and data is to define the estimand within the context of the generative model. The estimand is the specific object of inference, representing the goal of our analysis and the quantity we aim to estimate. For example, the estimand might be the effect of migration on cultural diversity for a given level of conformity in our study population, with formal definitions of diversity and conformity in a specific demographic context. Once determined, we can select appropriate control variables for inferential (statistical) models and determine identifiability, i.e., whether the effect of interest can be estimated at all with the data at hand. 
+- The estimand creates a direct, logical connection between the generative and inferential models and typically also includes the target population, providing a link back to the real world. Being specific about the estimand tells us which variables are necessary, and which must be ignored, for proper identification.
+- Using the generative model to simulate synthetic data is essential to understanding the inferential limits of a potential dataset. A nightmare scenario is to invest considerable effort and funds into collecting data that have no hope of answering the research question, as data can often be too sparse and noisy. 
+- Moving to the third aspect, the inferential model, once the empirical sample is collected, we can set up an inferential model and use one or more statistical estimators (e.g., a Bayesian network) and algorithms (optimization, MCMC, ABC) to derive estimates for our target of analysis. Much has been written about the derivation and construction of estimators and target estimates. 
+- Statistical estimators provide us with model coefficients, but reporting and interpreting raw statistical estimates including their associated uncertainty intervals, P-values, or Bayes factors is only an intermediate step in empirical analyses. Parameter estimates themselves are hard to interpret (especially in non-Gaussian models and models with interaction terms) and sizable differences on the parameter (e.g., logit) scale may correspond to negligible changes on the outcome (e.g., probability) scale. Therefore, answering research questions in the context of the target population often requires additional postprocessing of model estimates. First, to compute causal effects, we need to project our estimates to the outcome scale and to the relevant target population and potentially average (or “marginalize”) over other relevant variables jointly causing the outcome (46, 47). Second, using the assumptions embodied in the generative model in combination with data from a separate target population, we can compute predictions or generalizations beyond the study sample (43). As comparisons between populations are implicit exercises in generalization as well, this procedure also allows researchers to compare societies on an equal footing. Third, using the generative model, researchers can make principled counterfactual inferences about “what would have been” under different cultural or demographic circumstances. For example, we could estimate how cultural diversity in a specific population would change if the level of conformity would have been slightly higher than it is in reality.
+- Finally, researchers can now loop back to theory and iteratively update the generative model based on comparisons between computed effects, model predictions, and posterior simulations. Insights about inferential limits and potentials can inform future research design and data collection and, following many iterations of this process, improve our understanding of the processes generating the observed cultural dynamics.
+:::
+
+
+## Stages
+
+
+## Principles
+
+
+
+Discuss each Principles
+Discuss each Stages
+
+
+## Summary
+
+
+## References
+
+

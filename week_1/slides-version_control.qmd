@@ -1,0 +1,78 @@
+---
+title: "Version control"
+author: "Rohan Alexander"
+date: "2025-09-08"
+bibliography: references.bib
+format:
+  revealjs:
+    slide-number: "c/t"
+    show-slide-number: print
+---
+
+## What is the problem?
+
+- Rather than "first_go.py", "first_go-fixed.py", "first_go-fixed-with-mons-edits.py". But this soon becomes cumbersome. 
+- One often soon turns to dates, for instance: "2022-01-01-analysis.R", "2022-01-02-analysis.py, "2022-01-03-analysis.R", etc. 
+- While this keeps a record, it can be difficult to search when we need to go back, because it is hard to remember the date some change was made. 
+- In any case, it quickly gets unwieldy for a project that is being regularly worked on.
+
+## Why is it important that we think seriously about version control?
+
+- enhancing the reproducibility of work by making it easier to share code and data;
+- making it easier to share work;
+- improving workflow by encouraging systematic approaches; and
+- making it easier to work in teams.
+
+
+## What is the solution?
+
+- Instead of this, we use Git so that we can have one version of the file. 
+- Git keeps a record of the changes to that file, and a snapshot of that file at a given point in time. 
+- We determine when Git takes that snapshot. We additionally include a message saying what changed between this snapshot and the last. In that way, there is only ever one version of the file, and the history can be more easily searched.
+- One of the initial challenging aspects of Git is the terminology. Folders are called “repos”. Creating a snapshot is called a “commit”. 
+
+## 
+
+## A tale of two computers
+
+- `git clone <some URL>`: Get a repo from the GitHub cloud to your local computer e.g. `git clone https://github.com/RohanAlexander/STA4101`
+- `git pull`: Get the latest from GitHub onto your local computer.
+- `git status`: Look at what is going on.
+- `git add .`: Add all the files (alternative is `git add <some file>`) that have changed locally.
+- `git commit -m "Commit message"`: Explain what has changed locally.
+- `git push`: Make the change on the cloud.
+
+::: {.notes}
+- When using GitHub we want to distinguish between two computers: our local computer and the GitHub cloud computer.
+:::
+
+## Principles
+
+- Commit early and often; whenever there is coherent block of work. Maybe once or twice a day.
+- Try to work on a branch rather than main.
+- Make a PR to merge that branch into main when you are ready for review. Maybe once a day.
+- Try not to accept your own PR - that should be done by another person.
+
+## Git conflict
+
+- If two people change the same line then git doesn't know what to do. It will indicate where there is a conflict and then you need to resolve
+
+## Git ignore
+
+- Sometimes there are files that we do not want to push to GitHub. We create a `.gitignore` file to tell GitHub to ignore them. 
+- If you have a mac, make sure you add `.DS_Store` to the gitignore.
+
+
+## Issues
+
+- GitHub issue can be used to leave feedback or note ideas.
+
+![Screenshot of GitHub highlighting GitHub Issues.](github_issues.png)
+
+
+## Summary
+
+
+## References
+
+
