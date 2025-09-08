@@ -29,7 +29,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="slides-version_control_files/libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="slides-version_control_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="slides-version_control_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -196,6 +216,33 @@ Rohan Alexander
           display:block!important;
       }</style></aside>
 </section>
+<section id="git-conflicts" class="slide level2">
+<h2>Git conflicts</h2>
+<ul>
+<li>If two people change the same line then git doesn’t know what to do. It will indicate where there is a conflict and then you need to resolve</li>
+</ul>
+</section>
+<section id="git-ignore-files" class="slide level2">
+<h2>Git ignore files</h2>
+<ul>
+<li>Sometimes there are files that we do not want to push to GitHub. We create a <code>.gitignore</code> file to tell GitHub to ignore them.</li>
+<li>If you have a mac, make sure you add <code>.DS_Store</code> to the gitignore.</li>
+</ul>
+</section>
+<section id="git-branches" class="slide level2">
+<h2>Git branches</h2>
+<ul>
+<li>Git branches allow you to make changes in a contained way. If you don’t like the way that something turns out then it’s not a big deal to start again from the main branch.</li>
+</ul>
+
+<img data-src="git-branch-diagrams.png" class="r-stretch quarto-figure-center"><p class="caption">Example of Git branching from <span class="citation" data-cites="Timbers2024">Timbers et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>.</p></section>
+<section id="issues" class="slide level2">
+<h2>Issues</h2>
+<ul>
+<li>GitHub issue can be used to leave feedback or note ideas.</li>
+</ul>
+
+<img data-src="github_issues.png" class="r-stretch quarto-figure-center"><p class="caption">Screenshot of GitHub highlighting GitHub Issues.</p></section>
 <section id="principles" class="slide level2">
 <h2>Principles</h2>
 <ul>
@@ -205,19 +252,14 @@ Rohan Alexander
 <li>Try not to accept your own PR - that should be done by another person.</li>
 </ul>
 </section>
-<section id="issues" class="slide level2">
-<h2>Issues</h2>
-<ul>
-<li>GitHub issue can be used to leave feedback or note ideas.</li>
-</ul>
-
-<img data-src="github_issues.png" class="r-stretch quarto-figure-center"><p class="caption">Screenshot of GitHub highlighting GitHub Issues.</p></section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-</section>
-<section id="references" class="slide level2">
+<section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Timbers2024" class="csl-entry" role="listitem">
+Timbers, Tiffany A., Joel Ostblom, Florencia D’Andrea, Rodolfo Lourenzutti, and Daniel Chen. 2025. <em>Reproducible and Trustworthy Workflows for Data Science</em>.
+</div>
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
