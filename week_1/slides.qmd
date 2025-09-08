@@ -28,13 +28,13 @@ format:
 ## What is statistical workflow?
 
 - Definition: The steps that we go through when trying to use data to learn about the world.
-- Aim: Want a process that is robust and rigourous end-to-end, not just in the statistical analysis part. This will enable transparent, efficient, and trustworthy research.
+- Aim: Want a process that is robust and rigorous end-to-end, not just in the statistical analysis part. This will enable transparent, efficient, and trustworthy research.
 
 ::: {.notes}
 - Tiffany Timbers and co-authors define data science as "The study, development and practice of reproducible and auditable processes to obtain insight from data."
 - I say that data science is the process of developing and applying a principled, tested, reproducible, end-to-end workflow that focuses on quantitative measures in and of themselves, and as a foundation to explore questions. 
 - Other authors have similar definitions. The point is that we want to use data to learn something.
-- Statistics, which you've hopefully taken a course or two in, is one aspect of that. Modelling has very rigourous approaches once we have a dataset. Experimental design has very rigourous approach for how we should get data. etc etc etc. 
+- Statistics, which you've hopefully taken a course or two in, is one aspect of that. Modelling has very rigorous approaches once we have a dataset. Experimental design has very rigorous approach for how we should get data. etc etc etc. 
 - Workflow attempts to put this all together, including developing research questions, relating our results to theory. And filling in all the gaps in the process that we might otherwise paper over.
 :::
 
@@ -98,7 +98,7 @@ In this example of a computational workflow, we start on the left with a generat
 ## What is the problem?
 
 - Rather than "first_go.py", "first_go-fixed.py", "first_go-fixed-with-mons-edits.py". But this soon becomes cumbersome. 
-- One often soon turns to dates, for instance: "2022-01-01-analysis.R", "2022-01-02-analysis.py, "2022-01-03-analysis.R", etc. 
+- One often soon turns to dates, for instance: "2022-01-01-analysis.py", "2022-01-02-analysis.py", "2022-01-03-analysis.py", etc. 
 - While this keeps a record, it can be difficult to search when we need to go back, because it is hard to remember the date some change was made. 
 - In any case, it quickly gets unwieldy for a project that is being regularly worked on.
 
@@ -129,10 +129,10 @@ In this example of a computational workflow, we start on the left with a generat
 - When using GitHub we want to distinguish between two computers: our local computer and the GitHub cloud computer.
 :::
 
-## Git ignore files
+## .gitignore file
 
 - Sometimes there are files that we do not want to push to GitHub. We create a `.gitignore` file to tell GitHub to ignore them. 
-- If you have a mac, make sure you add `.DS_Store` to the gitignore.
+- If you have a mac, make sure you add `.DS_Store` to the `.gitignore`.
 
 ## Git branches
 
@@ -152,7 +152,7 @@ In this example of a computational workflow, we start on the left with a generat
 
 ## Issues
 
-- GitHub issue can be used to leave feedback or note ideas.
+- GitHub Issues can be used to leave feedback or note ideas.
 
 ![Screenshot of GitHub highlighting GitHub Issues.](github_issues.png)
 
