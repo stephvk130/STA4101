@@ -67,6 +67,7 @@ Homework
 - Download and install uv: https://docs.astral.sh/uv/getting-started/installation/.
 - Download and install VS Code.
 - Download and install Quarto.
+- Add the Quarto extension to VS Code: https://marketplace.visualstudio.com/items?itemName=quarto.quarto.
 - Use uv to install Python: https://docs.astral.sh/uv/guides/install-python/.
 - Use uv to run a script: https://docs.astral.sh/uv/guides/scripts/.
 - Connect your GitHub account to VS Code.
