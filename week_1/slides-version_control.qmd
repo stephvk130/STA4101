@@ -46,22 +46,27 @@ format:
 - When using GitHub we want to distinguish between two computers: our local computer and the GitHub cloud computer.
 :::
 
-## Principles
 
-- Commit early and often; whenever there is coherent block of work. Maybe once or twice a day.
-- Try to work on a branch rather than main.
-- Make a PR to merge that branch into main when you are ready for review. Maybe once a day.
-- Try not to accept your own PR - that should be done by another person.
-
-## Git conflict
+## Git conflicts
 
 - If two people change the same line then git doesn't know what to do. It will indicate where there is a conflict and then you need to resolve
 
-## Git ignore
+## Git ignore files
 
 - Sometimes there are files that we do not want to push to GitHub. We create a `.gitignore` file to tell GitHub to ignore them. 
 - If you have a mac, make sure you add `.DS_Store` to the gitignore.
 
+## Git branches
+
+- Git branches allow you to make changes in a contained way. If you don't like the way that something turns out then it's not a big deal to start again from the main branch. 
+
+![Example of Git branching from @Timbers2024.](git-branch-diagrams.png)
+
+## Pull requests
+
+- Pull requests (PRs) are a way to merge the code from your branch into the main branch. First you want to make sure that you've pushed everything that you changed. After that you can make a PR.
+
+![Example of Git branching from @Timbers2024.](git-branch-diagrams.png)
 
 ## Issues
 
@@ -70,7 +75,12 @@ format:
 ![Screenshot of GitHub highlighting GitHub Issues.](github_issues.png)
 
 
-## Summary
+## Principles
+
+- Commit early and often; whenever there is coherent block of work. Maybe once or twice a day.
+- Try to work on a branch rather than main.
+- Make a PR to merge that branch into main when you are ready for review. Maybe once a day.
+- Try not to accept your own PR - that should be done by another person.
 
 
 ## References
