@@ -1,0 +1,43 @@
+---
+title: "Graphical Excellence"
+author: "Arusan, Andrew, Philip"
+date: "2025-09-15"
+date-format: "D MMMM, YYYY"
+bibliography: references.bib
+format:
+  revealjs:
+    slide-number: "c/t"
+    show-slide-number: all
+---
+
+## Data Maps and Time Series
+
+- Data Maps:
+  - immediately analysing the map versus having understand each methodology, draws the reader's attention promptly
+
+- Time Series:
+  - good for large data sets with variability
+  - simple passage of time is not a good explanatory variable 
+  - time is not always the cause of a trend
+
+## A Data Map
+
+![](dataMap.png){ width=600 }
+
+## Principles of Graphical Excellence
+
+- Induce the viewer to think about substance
+- Well-designed presentation of interesting data
+- Clarity, precision, and efficiency are key
+
+- Presents the 
+    - greatest amount of ideas,
+    - in the shortest time,
+    - in the least ink
+
+
+**"Always tells the truth"**
+
+## References
+
+- Tufte, *The Visual Display of Quantitative Information*, Chapter 1.
