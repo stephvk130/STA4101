@@ -1,0 +1,35 @@
+---
+title: "Effective graphs"
+author: "Arno and Garry"
+date: "2025-09-15"
+date-format: "D MMMM, YYYY"
+bibliography: references.bib
+format:
+  revealjs:
+    slide-number: "c/t"
+    show-slide-number: all
+---
+
+
+
+## 2.2 Clear Vision
+
+1. The data on a graph are the reason for the existence of the graph.
+
+2. Simplify visuals—use thin lines, light grids.
+
+3. We should eliminate superfluity in graphs.
+
+## 2.3 Superfluity and Standing Out
+
+1. Avoid superfluity—remove clutter and distractions.
+
+2. Ensure important information is standing out.
+
+
+::: {.notes}
+- Read out the quote.
+- For me, it is a way of seeing if the author has understood their dataset.
+:::
+
+## References
