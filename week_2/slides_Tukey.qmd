@@ -1,0 +1,25 @@
+---
+title: "Plots of Relationship"
+author: "Henry Huang, Stephanie Chen"
+date: "2025-09-15"
+date-format: "D MMMM, YYYY"
+#bibliography: references.bib
+format:
+  revealjs:
+    slide-number: "c/t"
+    show-slide-number: all
+---
+
+## Plotting y aginast x
+
+- To make a nice graph, we need to make appropriate choices including:
+  - Ruling
+  - Scale units
+  - Kinds of grids
+  - Plot shapes; and
+  - Ticks and number along axes
+
+## Subtraction
+
+- For better illustration of the plots, we can use untilting to show residual, or we can do the subtraction by arithmetic to create straight lines
+- Once the plot is straightened, we can usually gain much by flattering it, usually by plotting residuals
